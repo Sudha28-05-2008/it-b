@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>R.M.K. Engineering College — Admissions</title>
+  <meta name="description" content="Admission portal for R.M.K Engineering College, Kavaraipettai - Apply online for undergraduate and postgraduate courses." />
+
+  <style>
+    :root{
+      --primary:#0f172a; /* slate-900 */
+      --accent:#0ea5e9; /* sky-400 */
+      --muted:#64748b;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.08);
+      --max-width:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#eef2ff 0%, #ffffff 60%);
+      color:var(--primary);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:24px;
+    }
+    .container{max-width:var(--max-width);margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav a{margin-left:18px;color:var(--primary);text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;padding:28px 0}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));padding:26px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.08)}
+    .hero h1{font-size:28px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+
+    .grid-two{display:grid;grid-template-columns:1fr 420px;gap:22px}
+
+    /* Courses */
+    .courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+    .course{background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.04)}
+    .course h3{margin:0 0 6px;font-size:16px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;color:var(--muted)}
+
+    /* Form */
+    form{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(2,6,23,0.06)}
+    label{display:block;font-size:13px;margin-top:10px;color:var(--muted)}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8;margin-top:6px;font-size:14px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .actions{display:flex;gap:10px;align-items:center;margin-top:12px}
+    button.primary{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none;color:white;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+    button.ghost{background:transparent;border:1px solid rgba(2,6,23,0.06);padding:9px 12px;border-radius:10px;cursor:pointer}
+
+    /* Info */
+    .info{padding:12px; border-radius:10px;background:linear-gradient(180deg,#f8fafc,#ffffff);border:1px solid rgba(99,102,241,0.06)}
+    .info p{margin:6px 0;color:var(--muted);font-size:14px}
+
+    /* FAQ & Footer */
+    details{background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(2,6,23,0.04);margin-bottom:8px}
+
+    footer{margin-top:28px;padding:18px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .grid-two{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      nav{display:none}
+      .hero h1{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RMK</div>
+        <div>
+          <div style="font-weight:800">R.M.K. Engineering College</div>
+          <div style="font-size:12px;color:var(--muted)">Kavaraipettai — Admissions 2025</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#apply">Apply</a>
+        <a href="#courses">Courses</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-card">
+        <div class="grid-two">
+          <div>
+            <h1>Join R.M.K. Engineering College — Shape your future in Kavaraipettai</h1>
+            <p>Apply now for undergraduate and postgraduate programmes. Scholarships, industry tie-ups and vibrant campus life.</p>
+
+            <section id="courses" style="margin-top:18px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><strong>Popular Courses</strong><span class="pill">Accredited</span></div>
+              <div class="courses">
+                <article class="course">
+                  <h3>B.E. Computer Science & Engineering</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 120 | Duration: 4 years</div>
+                </article>
+                <article class="course">
+                  <h3>B.E. Mechanical Engineering</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 120 | Duration: 4 years</div>
+                </article>
+                <article class="course">
+                  <h3>B.E. Electrical & Electronics</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 60 | Duration: 4 years</div>
+                </article>
+                <article class="course">
+                  <h3>B.E. Civil Engineering</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 60 | Duration: 4 years</div>
+                </article>
+                <article class="course">
+                  <h3>B.Tech. Information Technology</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 60 | Duration: 4 years</div>
+                </article>
+                <article class="course">
+                  <h3>M.E. Applied Electronics</h3>
+                  <div style="font-size:13px;color:var(--muted)">Intake: 24 | Duration: 2 years</div>
+                </article>
+              </div>
+            </section>
+
+            <section style="margin-top:16px" id="why">
+              <h3 style="margin:8px 0">Why choose RMK?</h3>
+              <ul style="margin:0 0 0 18px;color:var(--muted)">
+                <li>Strong industry partnerships & placement support.</li>
+                <li>Experienced faculty and well-equipped labs.</li>
+                <li>Holistic development — clubs, sports & entrepreneurship.</li>
+              </ul>
+            </section>
+
+          </div>
+
+          <aside>
+            <div class="info">
+              <strong>Quick facts</strong>
+              <p><strong>Location:</strong> Kavaraipettai, Tamil Nadu</p>
+              <p><strong>Working hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM</p>
+              <p><strong>Contact:</strong> admissions@rmkec.edu.in | +91 44 1234 5678</p>
+              <div style="margin-top:8px">
+                <a href="#apply" class="pill" style="text-decoration:none">Apply Online</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <section id="apply" style="display:flex;gap:18px;flex-direction:column">
+        <form id="admissionForm" class="hero-card" onsubmit="return false;">
+          <h2 style="margin:0 0 8px">Admission Application</h2>
+          <p style="margin:0 0 14px;color:var(--muted);font-size:14px">Fill the form below. All fields marked * are mandatory.</p>
+
+          <div class="row">
+            <div>
+              <label for="firstName">First name *</label>
+              <input id="firstName" name="firstName" placeholder="Enter first name" required />
+            </div>
+            <div>
+              <label for="lastName">Last name *</label>
+              <input id="lastName" name="lastName" placeholder="Enter last name" required />
+            </div>
+          </div>
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <div class="row">
+            <div>
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" placeholder="10-digit mobile" required />
+            </div>
+            <div>
+              <label for="dob">Date of birth *</label>
+              <input id="dob" name="dob" type="date" required />
+            </div>
+          </div>
+
+          <label for="course">Course applying for *</label>
+          <select id="course" name="course" required>
+            <option>B.E. - Computer Science & Engineering</option>
+            <option>B.E. - Mechanical Engineering</option>
+            <option>B.E. - Electrical & Electronics Engineering</option>
+            <option>B.E. - Civil Engineering</option>
+            <option>B.Tech. - Information Technology</option>
+            <option>M.E. - Applied Electronics</option>
+          </select>
+
+          <label for="qualify">Qualifying exam / Board *</label>
+          <input id="qualify" name="qualify" placeholder="e.g. HSC / CBSE / State Board / GATE" required />
+
+          <div class="row">
+            <div>
+              <label for="percentage">Percentage (%) *</label>
+              <input id="percentage" name="percentage" type="number" step="0.01" min="0" max="100" placeholder="Eg: 85.5" required />
+            </div>
+            <div>
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option>General</option>
+                <option>OBC</option>
+                <option>SC</option>
+                <option>ST</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="message">Additional information</label>
+          <textarea id="message" name="message" rows="3" placeholder="Scholarship request, special needs, etc (optional)"></textarea>
+
+          <div class="actions">
+            <button id="submitBtn" class="primary">Submit Application</button>
+            <button id="resetBtn" type="button" class="ghost">Reset</button>
+            <div id="formStatus" style="margin-left:10px;color:var(--muted)"></div>
+          </div>
+        </form>
+
+        <section id="faq" class="hero-card">
+          <h3 style="margin:0 0 10px">Frequently Asked Questions</h3>
+          <details>
+            <summary>What is the eligibility for B.E. courses?</summary>
+            <div style="margin-top:8px;color:var(--muted)">Completion of HSC (10+2) with Mathematics, Physics and Chemistry / equivalent as per university rules.</div>
+          </details>
+          <details>
+            <summary>How do I apply for scholarships?</summary>
+            <div style="margin-top:8px;color:var(--muted)">Indicate scholarship request in the application form and attach required documents at counselling stage.</div>
+          </details>
+          <details>
+            <summary>When are admissions open?</summary>
+            <div style="margin-top:8px;color:var(--muted)">Admissions generally open from June every year subject to university schedule.</div>
+          </details>
+        </section>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        <strong>R.M.K. Engineering College</strong>
+        <div style="font-size:13px;color:var(--muted)">Kavaraipettai, Tamil Nadu</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:13px;color:var(--muted)">Email: admissions@rmkec.edu.in | Phone: +91 44 1234 5678</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:6px">© R.M.K. Engineering College — All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const form = document.getElementById('admissionForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const resetBtn = document.getElementById('resetBtn');
+      const status = document.getElementById('formStatus');
+
+      function validate(){
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.replace(/\D/g,'');
+        const dob = document.getElementById('dob').value;
+        const percentage = parseFloat(document.getElementById('percentage').value);
+
+        if(!firstName) return 'First name required';
+        if(!lastName) return 'Last name required';
+        if(!/^\S+@\S+\.\S+$/.test(email)) return 'Enter valid email';
+        if(!/^[6-9]\d{9}$/.test(phone)) return 'Enter valid 10-digit Indian mobile number';
+        if(!dob) return 'Date of birth is required';
+        if(Number.isNaN(percentage) || percentage<0 || percentage>100) return 'Enter valid percentage 0-100';
+        return '';
+      }
+
+      submitBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        status.textContent = '';
+        const err = validate();
+        if(err){ status.textContent = err; status.style.color = 'crimson'; return; }
+
+        submitBtn.disabled = true; submitBtn.textContent = 'Submitting...';
+
+        // Simulate a server call (replace with real API endpoint)
+        setTimeout(()=>{
+          submitBtn.disabled = false; submitBtn.textContent = 'Submit Application';
+          status.style.color = 'green';
+          status.textContent = 'Application submitted successfully. We will contact you shortly.';
+          form.reset();
+        },1200);
+      });
+
+      resetBtn.addEventListener('click', function(){
+        form.reset(); status.textContent = ''; status.style.color = 'var(--muted)';
+      });
+
+      // Small enhancement: prefill course if URL has ?course=...
+      const params = new URLSearchParams(location.search);
+      if(params.get('course')){
+        const select = document.getElementById('course');
+        for(const opt of select.options){ if(opt.text.includes(params.get('course'))){ opt.selected = true; break }}
+      }
+    })();
+  </script>
+</body>
+</html>
